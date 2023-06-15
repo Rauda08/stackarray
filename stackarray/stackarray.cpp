@@ -31,5 +31,6 @@ public:
 		}
 
 		cout << "\mThe popped element is: " << stack_array[top] << endl;		// Step 2
+		top--;								// Step 3
 	}
 };
