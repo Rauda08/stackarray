@@ -3,8 +3,8 @@
 using namespace std;
 
 class StackArray {
-private: 
-	string Stack_array[5];
+private:
+	string stack_array[5];
 	int top;
 public:
 	//constuctor
@@ -26,6 +26,10 @@ public:
 
 	void pop() {
 		if (empty()) { //step 1
-			cout << "\nStack is empty. Cannot pop." << endl; 
+			cout << "\nStack is empty. Cannot pop." << endl;
 			return; //1.b 
-		
+		}
+
+		cout << "\mThe popped element is: " << stack_array[top] << endl;		// Step 2
+	}
+};
